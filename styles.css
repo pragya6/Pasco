@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(159, 150, 150);
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menubar {
+  background-color: black;
+}
+
+.container-fluid {
+  justify-self: flex-start;
+  align-self: center;
+  width: 1170px;
+  height: 100%;
+}
+
+.top-menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: white;
+}
+
+.icon-stack {
+  height: 16px;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10.7px;
+  flex-grow: 0;
+}
+
+.icon-stack > i {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  color: gray;
+}
+
+.span-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10.7px;
+  flex-grow: 0;
+}
+
+.spaced-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11.5px;
+  flex-grow: 0;
+}
+
+.sign-lang {
+  width: 164px;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0;
+  gap: 3.9px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.sign-in .material-symbols-outlined {
+  font-size: 19px;
+  align-self: center;
+  color: gray;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.4px;
+  color: inherit;
+}
+
+.text {
+  padding-top: 2.75px;
+  word-spacing: 0.5px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.lang {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: inherit;
+}
+
+.lang .material-symbols-outlined {
+  font-size: 19px;
+  align-self: center;
+  color: gray;
+}
+
+#down{
+  width: 8px;
+}
+
+#eng {
+  padding-left: 4px;
+  padding-top: 1.7px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.separator {
+  width: 2px;
+  height: 21px;
+  border-left: 2px solid #666;
+  align-self: center;
+}
+
+.main-menu {
+  background-image: url("main-menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.backdrop {
+  background-color: rgba(33, 33, 33, 0.5);
+  z-index: 10;
+}
+
+.nav-bar {
+  height: 71px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: transparent;
+  z-index: 20;
+}
+
+.nav-logo {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 3px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  justify-self: flex-start;
+}
+
+.navbar-ul {
+  font-size: 14px;
+  font-weight: bold;
+  list-style: none;
+  margin-top: 23px;
+  margin-left: 110px;
+  padding: 0;
+  justify-self: flex-start;
+  flex-grow: 1;
+}
+
+.navbar-li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 7px;
+}
+
+.navbar-li a {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+  align-items: center;
+}
+
+.header-anchors{
+  margin-right: 5.5px;
+}
+
+.navbar-li .icon{
+  color: white;
+}
+
+.navbar-li .material-symbols-outlined{
+  align-self: center;
+}
+
+.header-icons {
+  justify-self: flex-end;
+  margin-top: 20.5px;
+  margin-right: 13px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.header-separator {
+  width: 1px;
+  height: 30px;
+  border-left: 1px solid #b4b4b4;
+  align-self: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 20;
+  color: white;
+}
