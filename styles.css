@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgb(159, 150, 150);
+  background-color: white;
 }
 
 a {
@@ -149,7 +149,7 @@ a {
 }
 
 .main-menu {
-  background-image: url("main-menu.png");
+  background-image: url("./assets/main-menu.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
