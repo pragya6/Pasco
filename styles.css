@@ -149,7 +149,7 @@ a {
 }
 
 .main-menu {
-  background-image: url("main-menu.png");
+  background-image: url("./assets/main-menu.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
