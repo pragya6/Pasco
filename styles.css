@@ -93,8 +93,8 @@ a {
   text-transform: uppercase;
 }
 
-.sign-in .material-symbols-outlined {
-  font-size: 19px;
+.sign-in .material-icons {
+  font-size: 18px;
   align-self: center;
   color: gray;
 }
@@ -103,7 +103,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3.4px;
+  gap: 5px;
   color: inherit;
 }
 
@@ -123,14 +123,16 @@ a {
   color: inherit;
 }
 
-.lang .material-symbols-outlined {
+.lang .material-icons {
   font-size: 19px;
   align-self: center;
   color: gray;
 }
 
 #down{
-  width: 8px;
+  width: 15px;
+  font-size: 19px;
+  padding-top: 2px;
 }
 
 #eng {
@@ -157,7 +159,7 @@ a {
 }
 
 .backdrop {
-  background-color: rgba(33, 33, 33, 0.5);
+  background-color: rgba(33, 33, 33, 0.7);
   z-index: 10;
 }
 
@@ -187,36 +189,48 @@ a {
   font-size: 14px;
   font-weight: bold;
   list-style: none;
-  margin-top: 23px;
-  margin-left: 110px;
+  margin-top: 26px;
+  margin-left: 107.5px;
+  margin-bottom: 0;
   padding: 0;
+  height: 40px;
   justify-self: flex-start;
   flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .navbar-li {
   display: inline;
-  margin-left: 10px;
-  margin-right: 7px;
+  height: 100%;
+  margin-right: 11.5px;
 }
 
-.navbar-li a {
+.header-anchors {
   text-decoration: none;
+  height: 100%;
   color: inherit;
-  display: inline;
-  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.header-anchors{
-  margin-right: 5.5px;
+.header-anchors .material-icons{
+  font-size: 18px;
 }
 
-.navbar-li .icon{
-  color: white;
+.header-anchors:hover{
+  border-bottom: 4.5px solid #ff4081;
 }
 
-.navbar-li .material-symbols-outlined{
-  align-self: center;
+.active{
+  border-bottom: 4.5px solid #ff4081;
+}
+
+.anchor-heads{
+  margin-right: 7px;
+  padding-left: 13px;
 }
 
 .header-icons {
