@@ -271,14 +271,14 @@ a {
   text-align: center;
   margin-top: 210.5px;
   margin-left: 517.5px;
-  margin-bottom: 13px;
+  margin-bottom: 12.5px;
 }
 
 .title > h1 {
   width: 848px;
-  font-size: 40px;
-  letter-spacing: 3.35px;
-  line-height: 50.5px;
+  font-size: 42px;
+  letter-spacing: 0.8px;
+  line-height: 52px;
   text-transform: uppercase;
   color: inherit;
   font-weight: 900;
@@ -291,14 +291,15 @@ a {
 .title-button {
   width: 172.5px;
   margin-left: 500px;
-  margin-top: 29px;
+  margin-top: 28.5px;
   margin-bottom: 78px;
+  border: none;
   border-radius: 25px;
-  font-size: 18px;
+  color: white;
   background-color: #303f9f;
+  font-size: 18px;
   letter-spacing: 0.2px;
   line-height: 41px;
-  color: white;
   font-weight: 400;
   font-family: "Montserrat";
   text-transform: uppercase;
