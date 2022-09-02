@@ -292,9 +292,9 @@ a {
   width: 172.5px;
   margin-left: 500px;
   margin-top: 28.5px;
-  margin-bottom: 78px;
+  margin-bottom: 79px;
   border: none;
-  border-radius: 25px;
+  border-radius: 28px;
   color: white;
   background-color: #303f9f;
   font-size: 18px;
@@ -305,6 +305,61 @@ a {
   text-transform: uppercase;
 }
 
-.title-button:hover{
+.title-button:hover {
   box-shadow: 2px 0px 10px 4px rgba(0, 0, 255, 0.4);
 }
+
+.flex-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+
+.author-comment {
+  width: 100%;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.author {
+  width: 100%;
+  flex-direction: column;
+  border: white 1px solid;
+}
+
+#henry {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 556.5px;
+  margin-bottom: 13px;
+}
+
+.author-name {
+  color: inherit;
+  margin: 0;
+  margin-left: 536.5px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.date {
+  font-size: 10px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+  margin: 0;
+  margin-left: 522.5px;
+}
+
+.title-comment{
+  width: 100%;
+}
+
+
