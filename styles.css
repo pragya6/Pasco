@@ -232,7 +232,7 @@ a {
   border-bottom: 4.5px solid #ff4081;
 }
 
-.active {
+.home-active {
   border-bottom: 4.5px solid #ff4081;
 }
 
@@ -251,7 +251,7 @@ a {
   align-items: center;
 }
 
-.header-icons .material-icons{
+.header-icons .material-icons {
   margin-top: 0.5px;
 }
 
@@ -370,7 +370,7 @@ a {
 .title-comment {
   width: 100%;
   margin-top: 28px;
-  margin-bottom: 65px;
+  margin-bottom: 64px;
 }
 
 .cl-span {
@@ -400,29 +400,53 @@ a {
   margin-left: 465px;
 }
 
-.sort-menu {
+.sort-box-menu {
   background-color: white;
+  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.3);
 }
 
-.sort {
-  height: 70px;
+.sort-box {
+  height: 65px;
   width: 100%;
+  gap: 21px;
+  padding-top: 14px;
 }
 
-.sort > button {
-  font-size: 13px;
-  letter-spacing: 1px;
+#sort-box-span {
+  font-size: 12px;
   line-height: 34px;
-  color: #000000;
-  font-weight: 400;
-  font-family: "Montserrat";
-}
-
-#sort-span {
-  font-size: 13px;
-  letter-spacing: 1px;
-  line-height: 34px;
+  letter-spacing: 0px;
   color: #000000;
   font-weight: 700;
   font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+.sort-button-box {
+  gap: 15px;
+}
+
+.sort-button-box > button {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  padding: 9px 29px 6px 26px;
+  color: #000000;
+  background-color: #f5f5f5;
+  border-radius: 19px;
+  border: none;
+}
+
+.sort-button-box > button:hover {
+  color: #3f51b5;
+  border: 1px solid #3f51b5;
+  background-color: transparent;
+}
+
+.active-button {
+  padding: 8px 29px 6px 26px !important;
+  color: #3f51b5 !important;
+  border: 1px solid #3f51b5 !important;
+  background-color: transparent !important;
 }
