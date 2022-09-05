@@ -15,7 +15,7 @@ a {
   color: gray;
 }
 
-.container {
+.pasco-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ a {
   background-color: black;
 }
 
-.container-fluid {
+.container-fluid-pasco {
   justify-self: flex-start;
   align-self: center;
   width: 1170px;
@@ -166,7 +166,7 @@ a {
   border-left: 1px solid white;
 }
 
-.backdrop {
+.main-backdrop {
   background-color: rgba(33, 33, 33, 0.7);
   z-index: 10;
 }
@@ -174,10 +174,6 @@ a {
 .nav-bar {
   height: 71px;
   width: 100%;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   background: transparent;
   z-index: 20;
 }
@@ -204,9 +200,6 @@ a {
   height: 40px;
   justify-self: flex-start;
   flex-grow: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .navbar-li {
@@ -218,10 +211,6 @@ a {
 .header-anchors {
   text-decoration: none;
   height: 100%;
-  color: inherit;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .header-anchors .material-icons {
@@ -263,14 +252,18 @@ a {
   align-self: center;
 }
 
+#shift-left{
+  margin-right: 2.25px;
+}
+
 .title {
+  width: 100%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 20;
-  color: white;
-  width: 100%;
 }
 
 .title > h4 {
@@ -402,11 +395,11 @@ a {
 
 .sort-box-menu {
   background-color: white;
-  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 1px rgba(221, 221, 221, 1);
 }
 
 .sort-box {
-  height: 65px;
+  height: 46px;
   width: 100%;
   gap: 21px;
   padding-top: 14px;
@@ -444,9 +437,59 @@ a {
   background-color: transparent;
 }
 
-.active-button {
-  padding: 8px 29px 6px 26px !important;
-  color: #3f51b5 !important;
-  border: 1px solid #3f51b5 !important;
-  background-color: transparent !important;
+.sort-button-box .active-button {
+  padding: 8px 29px 6px 26px;
+  color: #3f51b5;
+  border: 1px solid #3f51b5;
+  background-color: transparent;
+}
+
+.art-sid-section {
+  background-color: #f5f5f5;
+  margin-top: 0.5px;
+}
+
+.article-side {
+  gap: 41px;
+  width: 100%;
+  padding-top: 29px;
+}
+
+.nine-articles {
+  width: 823px;
+}
+
+.article-one {
+  width: 100%;
+}
+
+.article1-top {
+  width: 100%;
+  height: 420px;
+  flex-direction: column;
+  background-image: url("./assets/article1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.article1-backdrop {
+  width: 100%;
+  height: 200px;
+  margin-top: 220px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2612395299916842) 50%,
+    rgba(0, 0, 0, 0.4096989137451855) 100%
+  );
+  z-index: 10;
+}
+
+.right-sidebar {
+  width: 309px;
+  height: 500px;
+  background-color: white;
 }
