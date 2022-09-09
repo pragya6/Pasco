@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -15,6 +14,7 @@
     />
 
     <title>Pasco</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <section class="pasco-container top-menubar">
@@ -36,17 +36,21 @@
             </span>
             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
-          <div class="sign-lang">
-            <div class="sign-in">
-              <span class="material-icons"> account_circle </span>
-              <span class="sign-text">Sign in</span>
-              <span></span>
-            </div>
+          <a href="#">
+            <div class="sign-lang">
+              <div class="sign-in">
+                <span class="material-icons"> account_circle </span>
+                <span class="sign-text">Sign in</span>
+                <span></span>
+              </div>
+          </a>
             <div class="sign-separator"></div>
             <div class="lang">
               <span class="material-icons"> language </span>
               <span id="eng">Eng</span>
-              <span id="down" class="material-icons"> expand_more </span>
+              <button>
+                <span id="down" class="material-icons"> expand_more </span>
+              </button>
             </div>
           </div>
         </div>
@@ -102,44 +106,50 @@
               </li>
             </ul>
             <span class="header-icons">
-              <span class="material-icons"> search </span>
+              <a href="#"><span class="material-icons"> search </span></a>
               <div class="header-separator"></div>
-              <span class="material-icons"> favorite_border </span>
+              <a href="#">
+                <span class="material-icons"> favorite_border </span>
+              </a>
               <div class="header-separator" id="shift-left"></div>
-              <span class="material-icons"> shopping_cart </span>
+              <a href="#">
+                <span class="material-icons"> shopping_cart </span>
+              </a>
             </span>
           </header>
-          <div class="title">
+          <div class="pasco-title">
             <h4>INSPIRATION</h4>
             <h1>5 Ways milllennials can start building their future today</h1>
-            <button class="title-button">Read More</button>
+            <button>Read More</button>
           </div>
           <div class="flex-box author-comment">
             <div class="flex-box author">
-              <img
+              <a href="#">
+                <img
                 id="henry"
                 src="./assets/henry-little.png"
                 alt="henry-little"
               />
-              <p class="author-name">Henry Little</p>
+              </a>
+              <a href="#" class="author-name">Henry Little</a>
               <p class="flex-box date">
                 <span>Apri 28. 2016</span>
                 <span>10:15</span>
               </p>
             </div>
             <div class="flex-box title-comment">
-              <div class="flex-box">
+              <a class="flex-box" href="#">
                 <span id="comment-icon" class="material-icons">
-                  question_answer
-                </span>
+                    question_answer
+                  </span>
                 <span class="cl-span com-lik">Comments</span>
                 <span class="cl-span" id="com-num">(28)</span>
-              </div>
-              <div class="flex-box">
-                <span class="material-icons"> favorite_border </span>
-                <span class="cl-span com-lik">Likes</span>
-                <span class="cl-span">(07)</span>
-              </div>
+              </a>
+              <a class="flex-box" href="#">
+                  <span class="material-icons"> favorite_border </span>
+                  <span class="cl-span com-lik">Likes</span>
+                  <span class="cl-span">(07)</span>
+              </a>
             </div>
           </div>
         </div>
@@ -163,7 +173,7 @@
       <div class="container-fluid-pasco">
         <div class="flex-box article-side">
           <div class="nine-articles">
-            <div class="article-one">
+            <section class="articles">
               <div class="article1-top">
                 <span id="play-button" class="material-icons">
                   play_circle_outline
@@ -190,9 +200,25 @@
                     deflecting change in life.
                   </p>
                 </div>
-                <div class="art1-author"></div>
+                <div class="art1-author">
+                  <img
+                    src="./assets/authors/henry-little.png"
+                    alt="henry-little"
+                  />
+                  <span>
+                    <p id="art1-henry">Henry Little</p>
+                    <p id="art1-date">
+                      Apri 28. 2016 <span class="art1-time">10:15</span>
+                    </p>
+                  </span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
               </div>
-            </div>
+            </section>
+            <section class="flex-box articles">
+              <div class="background-props article2-left"></div>
+              <div class="articles-right"></div>
+            </section>
           </div>
           <div class="right-sidebar"></div>
         </div>
