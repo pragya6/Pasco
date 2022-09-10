@@ -17,7 +17,7 @@ a {
   color: gray;
 }
 
-button{
+button {
   background-color: transparent;
   border: none;
   width: fit-content;
@@ -319,7 +319,7 @@ button{
   text-transform: uppercase;
 }
 
-.pasco-title> button:hover {
+.pasco-title > button:hover {
   box-shadow: 2px 0px 10px 4px rgba(0, 0, 255, 0.4);
 }
 
@@ -494,11 +494,17 @@ button{
 .article1-top #play-button {
   font-size: 60px;
   margin-left: 3px;
+  color: white;
+}
+
+.article1-top #play-button:hover {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
 }
 
 .article1-backdrop {
   width: 100%;
-  height: 43%;
+  height: 42%;
   justify-self: flex-end;
   display: flex;
   justify-content: center;
@@ -531,11 +537,18 @@ button{
   font-family: "Montserrat", sans-serif;
 }
 
-.articles-lik-com .material-icons {
+.articles-lik-com a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.articles-lik-com a span[class="material-icons"] {
   font-size: 17px;
 }
 
-.articles-lik-com .cl-text7 {
+.articles-lik-com a span[class="cl-text7"] {
   margin-left: 6.5px;
   margin-right: 19px;
   font-size: 13px;
@@ -544,7 +557,7 @@ button{
   font-family: "Montserrat", sans-serif;
 }
 
-.articles-lik-com .cl-text15 {
+.articles-lik-com a span[class="cl-text15"] {
   margin-left: 4.5px;
   margin-right: 18px;
   font-size: 13px;
@@ -594,7 +607,7 @@ button{
   border-bottom: 1px solid rgba(221, 221, 221, 1);
 }
 
-.art1-author > span{
+.art1-author > span {
   flex-grow: 1;
 }
 
@@ -621,7 +634,7 @@ button{
   font-family: "Montserrat", sans-serif;
 }
 
-.art1-author .art1-time{
+.art1-author .art1-time {
   margin-left: 9.5px;
 }
 
@@ -632,12 +645,16 @@ button{
   border-radius: 50%;
 }
 
-.art1-author .fa-ellipsis-v{
+.art1-author > button i[aria-hidden="true"] {
   margin-right: 21px;
   font-size: 18px;
 }
 
-.background-props{
+.art1-author > button:hover i[aria-hidden="true"] {
+  font-size: 23px;
+}
+
+.background-props {
   width: 260px;
   height: 165px;
   margin-right: 21.5px;
@@ -647,8 +664,8 @@ button{
   z-index: 1;
 }
 
-.article2-left{
-  background-image: url('./assets/articles/article2.png');
+.article2-left {
+  background-image: url("./assets/articles/article2.png");
 }
 
 .right-sidebar {
