@@ -4,12 +4,15 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-color: white;
+}
+
+body *{
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -125,7 +128,6 @@ button {
   word-spacing: 0.5px;
   font-size: 12px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
 }
 
 .sign-separator {
@@ -161,7 +163,6 @@ button {
   padding-top: 1.7px;
   font-size: 12px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
 }
 
 .main-menu {
@@ -282,7 +283,6 @@ button {
   line-height: 27px;
   color: inherit;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 210.5px;
   margin-left: 517px;
@@ -296,7 +296,6 @@ button {
   text-transform: uppercase;
   color: inherit;
   font-weight: 900;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0 0;
   margin-left: 164px;
@@ -315,7 +314,6 @@ button {
   letter-spacing: 0.2px;
   line-height: 45px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
@@ -351,7 +349,6 @@ button {
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 22px;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -360,7 +357,6 @@ button {
   line-height: 24px;
   color: inherit;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0;
   margin-left: 524px;
@@ -383,7 +379,6 @@ button {
   line-height: 19px;
   color: inherit;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -422,7 +417,6 @@ button {
   letter-spacing: 0px;
   color: #000000;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
@@ -433,7 +427,6 @@ button {
 .sort-button-box > button {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 9px 29px 6px 26px;
   color: #000000;
@@ -468,7 +461,7 @@ button {
 }
 
 .nine-articles {
-  flex-basis: 821.5px;
+  flex-basis: 820px;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -476,7 +469,7 @@ button {
 .article1 {
   width: 100%;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-top: 20px;
   border-bottom: 1px solid rgba(221, 221, 221, 1);
 }
@@ -537,7 +530,6 @@ button {
   margin-left: 18px;
   font-size: 12px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
 }
 
 .articles-lik-com a {
@@ -557,7 +549,6 @@ button {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
 }
 
 .articles-lik-com a span[class="cl-text15"] {
@@ -566,7 +557,6 @@ button {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
 }
 
 .article1-bottom {
@@ -586,7 +576,6 @@ button {
   font-weight: 700;
   letter-spacing: 0.3px;
   word-spacing: 0.6px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .art1-content :nth-child(2) {
@@ -621,7 +610,6 @@ button {
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 25px;
-  font-family: "Montserrat", sans-serif;
 }
 
 #art1-date {
@@ -632,7 +620,6 @@ button {
   font-weight: 400;
   letter-spacing: 0.3px;
   line-height: 23px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .art1-author .art1-time {
@@ -660,7 +647,7 @@ button {
   width: 100%;
   height: 165px;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 1.5px;
   border-bottom: 1px solid rgba(221, 221, 221, 1);
@@ -668,8 +655,8 @@ button {
 
 .background-props {
   height: 165px;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -723,7 +710,6 @@ button {
   padding-top: 2px;
   font-size: 12px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
 }
 
 .articles-left-backdrop .articles-lik-com a span[class="cl-text7"] {
@@ -751,7 +737,6 @@ button {
   font-size: 16.5px;
   font-weight: 700;
   letter-spacing: 0.09px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .articles-content :nth-child(2) {
@@ -785,7 +770,6 @@ button {
   font-size: 15px;
   font-weight: 600;
   line-height: 24px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .articles-author .articles-date {
@@ -796,7 +780,6 @@ button {
   font-weight: 400;
   letter-spacing: 0.3px;
   line-height: 22px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .articles-author .articles-time {
@@ -935,7 +918,6 @@ button {
   font-weight: 700;
   letter-spacing: 0.6px;
   line-height: 23px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .verticle-article .art1-content :nth-child(2) {
@@ -973,7 +955,6 @@ button {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .verticle-article .art1-author p[class = "verticle-date"] {
@@ -983,7 +964,6 @@ button {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.3px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .verticle-article .art1-author > button i[aria-hidden="true"] {
@@ -996,6 +976,28 @@ button {
 
 #article7-left {
   background-image: url("./assets/articles/article7.png");
+}
+
+.article7-buttons {
+  width: 100%;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article7-buttons button {
+  width: 36px;
+  height: 36px;
+  margin-left: 10.5px;
+  margin-right: 9.5px;
+  background-color: white;
+}
+
+.article7-buttons button > span {
+  padding-top: 3px;
+  font-size: 24px;
+  color: #3f51b5;
 }
 
 #articles89 .verticle-article {
@@ -1019,7 +1021,7 @@ button {
   flex-basis: 482px;
   flex-grow: 0;
   flex-shrink: 0;
-  margin-left: 38.5px;
+  margin-left: 40.5px;
   margin-top: 20px;
   background-color: white;
   overflow: visible;
