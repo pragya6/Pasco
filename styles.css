@@ -672,7 +672,7 @@ button {
   border-top-left-radius: 2px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto auto;
   overflow-x: hidden;
   z-index: 1;
 }
@@ -869,14 +869,14 @@ button {
   justify-content: center;
   align-items: flex-start;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   border-bottom: 1px solid rgba(221, 221, 221, 1);
 }
 
 .verticle-article div.background-props {
   border-bottom-left-radius: unset;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-size: auto auto;
 }
 
@@ -940,12 +940,16 @@ button {
 
 .verticle-article .art1-content :nth-child(2) {
   max-width: 222px;
-  margin: 7.5px 0px 25px 19px;
+  height: 84px;
+  margin: 7.5px 0px 24.5px 19px;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.6px;
   line-height: 21px;
-  line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -953,20 +957,37 @@ button {
   padding-top: 15px;
 }
 
+.verticle-article .art1-author span {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5.5px;
+}
+
 .verticle-article .art1-author a[class = "articles-authors"] {
   width: fit-content;
+  padding-top: 2px;
   margin: 0%;
-  margin-top: 4px;
   color: #000000;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.verticle-article .art1-author p[class = "verticle-date"] {
+  width: fit-content;
+  margin: 0%;
+  color: #212121;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
   font-family: "Montserrat", sans-serif;
 }
 
 .verticle-article .art1-author > button i[aria-hidden="true"] {
-  margin-top: 20px;
+  margin-top: 21.5px;
 }
 
 #article6-left {
@@ -975,6 +996,22 @@ button {
 
 #article7-left {
   background-image: url("./assets/articles/article7.png");
+}
+
+#articles89 .verticle-article {
+  flex-basis: 401px;
+}
+
+#articles89 div.verticle-article .background-props {
+  height: 400px;
+}
+
+#article8-left {
+  background-image: url("./assets/articles/article8.png");
+}
+
+#article9-left {
+  background-image: url("./assets/articles/article9.png");
 }
 
 .right-sidebar {
