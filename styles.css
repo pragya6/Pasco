@@ -453,6 +453,10 @@ button {
   margin-top: 0.5px;
 }
 
+.art-sid-section a {
+  color: #000000;
+}
+
 .article-side {
   width: 100%;
   padding-top: 9px;
@@ -578,6 +582,10 @@ button {
   word-spacing: 0.6px;
 }
 
+.art1-content :nth-child(1):hover {
+  color: #3f51b5;
+}
+
 .art1-content :nth-child(2) {
   width: 775px;
   margin: 6px 0px 13px 19px;
@@ -605,7 +613,6 @@ button {
   width: fit-content;
   margin: 0%;
   margin-top: 2px;
-  color: #000000;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -712,11 +719,11 @@ button {
   font-weight: 400;
 }
 
-.articles-left-backdrop .articles-lik-com a span[class="cl-text7"] {
+.articles  div.articles-lik-com a span[class="cl-text7"] {
   padding-top: 1.5px;
 }
 
-.articles-left-backdrop .articles-lik-com a span[class="cl-text15"] {
+.articles  div.articles-lik-com a span[class="cl-text15"] {
   padding-top: 1.5px;
 }
 
@@ -739,6 +746,10 @@ button {
   letter-spacing: 0.09px;
 }
 
+.articles-content :nth-child(1):hover {
+  color: #3f51b5;
+}
+
 .articles-content :nth-child(2) {
   width: 95%;
   margin: 8px 0px 15px;
@@ -752,7 +763,6 @@ button {
 }
 
 .articles-author {
-  color: #000000;
   padding: 10.5px 0px 11px 21px;
   display: flex;
   justify-content: flex-start;
@@ -766,7 +776,6 @@ button {
 .articles-author .articles-auth-name {
   width: fit-content;
   margin: 0%;
-  color: #000000;
   font-size: 15px;
   font-weight: 600;
   line-height: 24px;
@@ -863,24 +872,24 @@ button {
   background-size: auto auto;
 }
 
-.verticle-article .articles-lik-com {
+#article567 div.verticle-article .articles-lik-com {
   margin-bottom: 12px;
 }
 
-.verticle-article .articles-lik-com a span[class="material-icons"] {
+#article567 div.articles-lik-com a span[class="material-icons"] {
   padding-top: 1px;
   font-size: 17px;
 }
 
-.verticle-article .articles-lik-com .articles-insp {
+#article567 div.articles-lik-com .articles-insp {
   padding-top: 3px;
 }
 
-.verticle-article .articles-left-backdrop a span[class="cl-text7"] {
+#article567 .articles-left-backdrop a span[class="cl-text7"] {
   padding-top: 2px;
 }
 
-.verticle-article .articles-left-backdrop a span[class="cl-text15"] {
+#article567 .articles-left-backdrop a span[class="cl-text15"] {
   padding-top: 2px;
 }
 
@@ -910,7 +919,7 @@ button {
   background-image: url("./assets/articles/article5.png");
 }
 
-.verticle-article .art1-content :nth-child(1) {
+#article567 div.art1-content :nth-child(1) {
   margin: 0;
   margin-top: 12px;
   margin-left: 19.5px;
@@ -920,7 +929,7 @@ button {
   line-height: 23px;
 }
 
-.verticle-article .art1-content :nth-child(2) {
+#article567 div.art1-content :nth-child(2) {
   max-width: 222px;
   height: 84px;
   margin: 7.5px 0px 24.5px 19px;
@@ -935,11 +944,12 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
-.verticle-article .art1-author {
+#article567 div.art1-author {
   padding-top: 15px;
+  padding-bottom: 20px;
 }
 
-.verticle-article .art1-author span {
+div.verticle-article div.art1-author span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -947,17 +957,16 @@ button {
   gap: 5.5px;
 }
 
-.verticle-article .art1-author a[class = "articles-authors"] {
+div.verticle-article div.art1-author a[class = "articles-authors"] {
   width: fit-content;
   padding-top: 2px;
   margin: 0%;
-  color: #000000;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-.verticle-article .art1-author p[class = "verticle-date"] {
+div.verticle-article div.art1-author p[class = "verticle-date"] {
   width: fit-content;
   margin: 0%;
   color: #212121;
@@ -966,7 +975,7 @@ button {
   letter-spacing: 0.3px;
 }
 
-.verticle-article .art1-author > button i[aria-hidden="true"] {
+#article567 div.art1-author > button i[aria-hidden="true"] {
   margin-top: 21.5px;
 }
 
@@ -1000,12 +1009,51 @@ button {
   color: #3f51b5;
 }
 
-#articles89 .verticle-article {
-  flex-basis: 401px;
+#articles89 {
+  margin-top: 20px;
 }
 
-#articles89 div.verticle-article .background-props {
-  height: 400px;
+#articles89 .verticle-article {
+  flex-basis: 400.25px;
+}
+
+#articles89 div.verticle-articles-left {
+  flex-basis: 300px;
+}
+
+#articles89 div.articles-lik-com {
+  margin-bottom: 16px;
+}
+
+#articles89 div.articles-lik-com span[class="cl-text7"] {
+  padding-bottom: 2px;
+}
+
+#articles89 div.articles-lik-com span[class="cl-text15"] {
+  padding-bottom: 1px;
+}
+
+#articles89 .art1-content :nth-child(1) {
+  margin-top: 13.5px;
+  font-size: 18px;
+}
+
+#articles89 .art1-content :nth-child(2) {
+  width: 95%;
+  font-size: 15.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+#articles89 .art1-author {
+  padding-top: 15px;
+}
+
+#articles89 .art1-author >span {
+  padding-bottom: 2px;
 }
 
 #article8-left {
