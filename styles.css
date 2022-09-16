@@ -1181,11 +1181,17 @@ input:focus {
 
 .bar-headings {
   color: #3f51b5;
-  font-size: 19.5px;
+  font-size: 18.5px;
   text-transform: uppercase;
   margin: 0%;
+  margin-left: 2px;
   padding-bottom: 4.5px;
   border-bottom: 2px solid #2962ff;
+}
+
+.bar-categories h3.bar-headings {
+  font-size: 19.5px;
+  margin-left: 0px;
 }
 
 .bar-categories ul {
@@ -1217,11 +1223,6 @@ input:focus {
 
 .bar-subscribe {
   padding-top: 3.5px;
-}
-
-.bar-subscribe h3.bar-headings {
-  font-size: 18.5px;
-  margin-left: 2px;
 }
 
 .bar-subscribe > form,
@@ -1338,11 +1339,6 @@ input {
 
 .bar-post-widget {
   padding-top: 19px;
-}
-
-.bar-post-widget h3.bar-headings {
-  font-size: 18.5px;
-  margin-left: 2px;
 }
 
 .bar-buttongrp {
