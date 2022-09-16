@@ -1437,3 +1437,48 @@ input {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.1);
 }
+
+.bar-tags{
+  padding-top: 4px;
+}
+
+.tags-container {
+  margin-left: 2px;
+  padding-top: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tags-container div.flex-box {
+  gap: 8px;
+}
+
+.tags-container :nth-child(1) button {
+  color: black;
+  padding: 3px 16px 7.5px 15px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  background-color:  #eeeeee;
+}
+
+.tags-container :nth-child(2) button {
+  color: black;
+  padding: 4px 21px 7px 19px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  background-color:  #eeeeee;
+}
+
+.tags-container :nth-child(3) button {
+  color: black;
+  padding: 4px 21px 7.5px 19px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  background-color:  #eeeeee;
+}
