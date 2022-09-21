@@ -151,13 +151,13 @@ button {
   color: gray;
 }
 
-#down {
+.lang > button > span.material-icons {
   width: 15px;
   font-size: 19px;
   padding-top: 5px;
 }
 
-#eng {
+.lang > span:nth-of-type(2) {
   padding-left: 4px;
   padding-top: 1.7px;
   font-size: 12px;
@@ -1286,7 +1286,7 @@ input {
   background-color: #000000;
 }
 
-.bar-subscribe > div.bar-icon-stack {
+div.bar-icon-stack {
   margin-top: 18px;
   margin-left: 3px;
   display: flex;
@@ -1294,7 +1294,7 @@ input {
   gap: 10.5px;
 }
 
-.bar-subscribe > div.bar-icon-stack > a {
+div.bar-icon-stack > a {
   width: 35.5px;
   height: 35.5px;
   border-radius: 50%;
@@ -1303,32 +1303,32 @@ input {
   align-items: center;
 }
 
-.bar-subscribe > div.bar-icon-stack > :nth-child(1) {
+div.bar-icon-stack > :nth-child(1) {
   padding-top: 1px;
   background-color: #3b5999;
 }
 
-.bar-subscribe > div.bar-icon-stack > :nth-child(2) {
+div.bar-icon-stack > :nth-child(2) {
   background-color: #55acee;
 }
 
-.bar-subscribe > div.bar-icon-stack > :nth-child(3) {
+div.bar-icon-stack > :nth-child(3) {
   background-color: #4c75a3;
 }
 
-.bar-subscribe > div.bar-icon-stack > :nth-child(4) {
+div.bar-icon-stack > :nth-child(4) {
   background-color: #ff2e56;
 }
 
-.bar-subscribe > div.bar-icon-stack > :nth-child(5) {
+div.bar-icon-stack > :nth-child(5) {
   background-color: #34465d;
 }
 
-.bar-subscribe > div.bar-icon-stack > :nth-child(6) {
+div.bar-icon-stack > :nth-child(6) {
   background-color: #ea4c89;
 }
 
-.bar-subscribe > div.bar-icon-stack i[aria-hidden="true"] {
+div.bar-icon-stack i[aria-hidden="true"] {
   color: white;
   font-size: 17.5px;
   font-weight: 500;
@@ -1586,6 +1586,7 @@ input {
 
 .footer-contnr div.flex-box {
   padding-top: 19.5px;
+  padding-bottom: 71.5px;
 }
 
 .footer-contnr div.pages-widgets {
@@ -1656,38 +1657,220 @@ input {
 }
 
 .footer-contnr div.twitter-widgets {
-  width: 22%;
-  margin-right: 10px;
+  width: 23%;
+  margin-right: 30px;
 }
 
 .footer-contnr div.twitter-widgets h4 {
   margin-bottom: 24px;
 }
 
-.footer-contnr .tweet-cmnt .tweet-cnt {
-  font-size: 13.25px;
-  font-family: "Open Sans", sans-serif;
-  gap: 15px;
-  padding: 0;
+.footer-contnr .tweet-cmnt {
+  margin-bottom: 11px;
 }
 
-.tweet-cmnt .tweet-cnt i{
+.footer-contnr .tweet-cmnt:nth-of-type(2) {
+  margin-bottom: 13px;
+  padding: 13px 0px 11px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.tweet-cmnt div.flex-box {
+  margin-bottom: 5px;
+  font-size: 14px;
+  gap: 16px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tweet-cmnt div.flex-box:nth-child(1) i {
   font-size: 23px;
   color: #55acee;
   margin-left: 10px;
 }
 
-.tweet-cmnt .tweet-optn {
-  font-size: 12px;
+.tweet-cmnt div.flex-box :nth-child(2) {
+  margin-top: -3px;
+  line-height: 21px;
   font-family: "Open Sans", sans-serif;
 }
 
-.footer-contnr div.flickr-widgets {
-  width: 23.4%;
-  margin-right: 10px;
+.tweet-cmnt div:nth-of-type(2) {
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.footer-contnr div.news-widgets {
-  width: 23.4%;
-  margin-right: 10px;
+.tweet-cmnt div:nth-of-type(2) span:nth-of-type(1) {
+  margin-top: 1.5px;
+}
+
+.tweet-cmnt div:nth-of-type(2) span:not(:nth-of-type(2)) {
+  margin-left: 2px;
+  margin-right: 8px;
+  font-size: 12.5px;
+  letter-spacing: 0.27px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tweet-cmnt div:nth-of-type(2) > a {
+  height: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.tweet-cmnt div:nth-of-type(2) span.material-icons {
+  margin-top: 2px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contnr div.twitter-widgets div:nth-of-type(2) h4 {
+  font-size: 18px;
+  margin-left: 1px;
+  margin-top: 25.5px;
+  margin-bottom: 15.5px;
+}
+
+.twitter-widgets div:nth-of-type(2) div.bar-icon-stack {
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.footer-contnr div.flickr-widgets {
+  margin-right: 28px;
+}
+
+div.flickr-widgets > div {
+  padding-top: 1px;
+  margin-left: 2.5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  column-gap: 7.89px;
+}
+
+.footer-contnr div.flex-box div.news-widgets {
+  width: 23%;
+}
+
+.footer-contnr div.news-widgets > div {
+  width: 100%;
+  padding-top: 1px;
+  margin-left: 1px;
+}
+
+.footer-contnr div.news-widgets > div > form {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contnr div.news-widgets > div > form * {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  padding: 13px 0px 11px;
+}
+
+.footer-contnr div.news-widgets > div > form > input::placeholder {
+  padding-left: 13px;
+}
+
+.footer-contnr div.news-widgets > div > form > textarea {
+  height: 94px;
+}
+
+.footer-contnr div.news-widgets > div > form > textarea::placeholder {
+  padding-top: 1px;
+  padding-left: 13px;
+}
+
+.footer-contnr div.news-widgets > div > form > button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.end-footer {
+  background-color: #303030;
+  height: 81px;
+}
+
+.end-footer > div {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.end-footer > div > ul.navbar-ul {
+  font-size: 12px;
+  margin: 0px 0px 1px 1px;
+  height: fit-content;
+  justify-self: center;
+  gap: 42px;
+}
+
+.end-footer > div > ul.navbar-ul > li.navbar-li {
+  margin: 0%;
+}
+
+.end-footer div.search-bar, div.lang {
+  color: gray;
+}
+
+.end-footer div.search-bar {
+  width: 18.65%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 1px;
+  margin-right: 70px;
+  justify-content: flex-start;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.end-footer div.search-bar > input {
+  width: 80%;
+  padding: 3px 0px 7px 19px;
+}
+
+.end-footer div.search-bar > input::placeholder {
+  font-size: 13.5px;
+  color: gray;
+}
+
+.end-footer div.search-bar > button {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  background-color: transparent;
+}
+
+.end-footer div.search-bar > button > span.material-icons {
+  color: gray;
+  font-size: 18px;
+}
+
+.end-footer div.lang {
+  text-transform: uppercase;
+  margin-bottom: 1px;
+}
+
+.end-footer div.lang > span:nth-of-type(2) {
+  margin-bottom: 1.5px;
+}
+
+.end-footer div.lang > button {
+  margin-bottom: 1px;
 }
