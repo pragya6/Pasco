@@ -10,6 +10,7 @@
 
   <title>Pasco</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script type="text/javascript" src="index.js" defer></script>
 </head>
 
 <body>
@@ -31,25 +32,23 @@
           </span>
           <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
-        <a href="#">
-          <div class="sign-lang">
-            <div class="sign-in">
-              <span class="material-icons"> account_circle </span>
-              <span class="sign-text">Sign in</span>
-              <span></span>
-            </div>
-        </a>
-        <div class="sign-separator"></div>
-        <div class="lang">
-          <span class="material-icons"> language </span>
-          <span id="eng">Eng</span>
-          <button>
-            <span id="down" class="material-icons"> expand_more </span>
-          </button>
+        <div class="sign-lang">
+          <div class="sign-in">
+            <span class="material-icons"> account_circle </span>
+            <span class="sign-text">Sign in</span>
+            <span></span>
+          </div>
+          </a>
+          <div class="sign-separator"></div>
+          <div class="lang">
+            <span class="material-icons"> language </span>
+            <span id="eng">Eng</span>
+            <button>
+              <span id="down" class="material-icons"> expand_more </span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
   </section>
   <section class="pasco-container main-menu">
     <div class="pasco-container main-backdrop">
@@ -110,7 +109,7 @@
             </a>
             <a href="#" class="author-name">Henry Little</a>
             <p class="flex-box date">
-              <span>Apri 28. 2016</span>
+              <span>April 28. 2016</span>
               <span>10:15</span>
             </p>
           </div>
@@ -188,7 +187,7 @@
                 <span>
                   <a href="#" id="art1-henry">Henry Little</a>
                   <p id="art1-date">
-                    Apri 28. 2016 <span class="art1-time">10:15</span>
+                    April 28. 2016 <span class="art1-time">10:15</span>
                   </p>
                 </span>
                 <button>
@@ -578,7 +577,7 @@
             </div>
           </section>
         </div>
-        <section class="flex-box right-sidebar">
+        <div class="right-sidebar">
           <div class="content-bar">
             <section class="sidebar-sections">
               <div class="search-bar">
@@ -745,9 +744,101 @@
               </div>
             </section>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   </section>
+  <section class="pasco-container footimg-contnr">
+    <section class="foot-images">
+      <img id="first" src="./assets/slider/1.png" />
+      <img src="./assets/slider/2.png" />
+      <img src="./assets/slider/3.png" />
+      <img src="./assets/slider/4.png" />
+      <img src="./assets/slider/5.png" />
+      <img src="./assets/slider/6.png" />
+      <img src="./assets/slider/7.png" />
+      <img id="last" src="./assets/slider/8.png" />
+    </section>
+  </section>
+  <section class="pasco-container news-letter">
+    <section class="pasco-container main-backdrop">
+      <div class="container-fluid-pasco flex-box">
+        <h1>Subscribe to our newsletter</h1>
+        <input placeholder="Email Address" />
+        <button>Subscribe</button>
+      </div>
+    </section>
+  </section>
+  <section class="pasco-container footer-contnr">
+    <div class="container-fluid-pasco flex-box">
+      <div class="pages-widgets">
+        <h4 class="widget-headings">Pages Widget</h4>
+        <div>
+          <div class="collapser">
+            <div class="collapser-header">
+              Home
+            </div>
+            <div class="collapser-content"></div>
+          </div>
+          <div class="collapser">
+            <div class="collapser-header">
+              Pages
+            </div>
+            <div class="collapser-content">
+              <ul class="collapser-ul">
+                <li class="collapser-item"><a href="#">Service</a></li>
+                <li class="collapser-item"><a href="#">FAQ</a></li>
+                <li class="collapser-item"><a href="#">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapser">
+            <div class="collapser-header">
+              Portfolio
+            </div>
+            <div class="collapser-content"></div>
+          </div>
+          <div class="collapser">
+            <div class="collapser-header">
+              Blog
+            </div>
+            <div class="collapser-content"></div>
+          </div>
+          <div class="collapser">
+            <div class="collapser-header">
+              Shop
+            </div>
+            <div class="collapser-content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="twitter-widgets">
+        <h4 class="widget-headings">Twitter Widget</h4>
+        <div class="tweet-cmnts">
+          <div class="tweet-cmnt">
+            <div class=" flex-box tweet-cnt">
+              <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+              <span>@PASCO, Duis commodo elit sed nisi molestie</span>
+            </div>
+            <div class="tweet-optn">
+              <span>2 hours ago</span>
+              <span class="material-icons"> arrow_right_alt </span>
+              <span>Reply</span>
+              <span>Retweet</span>
+              <span>Favourite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flickr-widgets">
+        <h4 class="widget-headings">Flickr Widget</h4>
+      </div>
+      <div class="news-widgets">
+        <h4 class="widget-headings">News letter</h4>
+      </div>
+    </div>
+  </section>
+
 </body>
+
 </html>

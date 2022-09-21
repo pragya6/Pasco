@@ -3,7 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +97,7 @@ button {
 }
 
 .sign-lang {
-  width: 164px;
+  width: 14.018%;
   justify-self: flex-end;
   display: flex;
   justify-content: space-between;
@@ -290,7 +289,7 @@ button {
 }
 
 .pasco-title > h1 {
-  width: 848px;
+  width: 72.479%;
   font-size: 43px;
   line-height: 51.5px;
   text-transform: uppercase;
@@ -302,7 +301,7 @@ button {
 }
 
 .pasco-title > button {
-  width: 172.5px;
+  width: 14.744%;
   margin-left: 500px;
   margin-top: 30px;
   margin-bottom: 78.5px;
@@ -459,9 +458,9 @@ button {
 
 .article-side {
   width: 100%;
+  max-height: max-content;
   padding-top: 9px;
   padding-left: 2px;
-  position: relative;
 }
 
 .nine-articles {
@@ -1067,11 +1066,7 @@ div.verticle-article div.art1-author p[class="verticle-date"] {
 
 .read-more > div {
   width: 100%;
-  margin: 43px 0px;
-}
-
-.read-more > div {
-  width: 100%;
+  margin: 43px 0px 43.5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1096,15 +1091,17 @@ div.verticle-article div.art1-author p[class="verticle-date"] {
   font-size: 23px;
 }
 
-.right-sidebar {
-  height: 2328.3px;
+.article-side .right-sidebar {
+  min-height: 100%;
   flex-basis: 41.17%;
   flex-grow: 0;
   flex-shrink: 0;
   margin-left: 40.5px;
   margin-top: 21.5px;
+  padding-bottom: 69.15%;
   background-color: white;
-  overflow: visible;
+  overflow-x: visible;
+  overflow-y: hidden;
   z-index: 20;
 }
 
@@ -1112,7 +1109,7 @@ div.verticle-article div.art1-author p[class="verticle-date"] {
   margin-left: 37.5px;
   margin-top: 24px;
   width: 56.5%;
-  height: 300px;
+  flex-grow: 0;
 }
 
 .sidebar-sections {
@@ -1438,7 +1435,7 @@ input {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.bar-tags{
+.bar-tags {
   padding-top: 4px;
 }
 
@@ -1460,7 +1457,7 @@ input {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
-  background-color:  #eeeeee;
+  background-color: #eeeeee;
 }
 
 .tags-container :nth-child(2) button {
@@ -1470,7 +1467,7 @@ input {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
-  background-color:  #eeeeee;
+  background-color: #eeeeee;
 }
 
 .tags-container :nth-child(3) button {
@@ -1480,5 +1477,217 @@ input {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
-  background-color:  #eeeeee;
+  background-color: #eeeeee;
+}
+
+.footimg-contnr {
+  max-width: 100%;
+  max-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.foot-images {
+  width: 100%;
+  max-height: 240px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+  animation: slide 10s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.news-letter {
+  background-image: url("./assets/footer-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.news-letter .main-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.news-letter .container-fluid-pasco {
+  padding: 62.5px 0px 77px;
+  z-index: 20;
+}
+
+.news-letter div.flex-box h1 {
+  margin: 0%;
+  margin-top: 9px;
+  flex-grow: 1;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 0.7px;
+  word-spacing: 0.5px;
+}
+
+.news-letter div.flex-box input {
+  width: 20.57%;
+  background-color: #303030;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 9.5px 10px 11px 17px;
+  margin-top: 15px;
+  border-radius: 25px;
+}
+
+.news-letter div.flex-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.news-letter div.flex-box input:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.news-letter div.flex-box button {
+  width: 14.5%;
+  padding: 10px;
+  padding-bottom: 12px;
+  margin-left: 28.5px;
+  margin-top: 14.57px;
+  color: white;
+  background-color: #303f9f;
+  border: none;
+  border-radius: 25px;
+  font-size: 17.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.news-letter div.flex-box button:hover {
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.7);
+}
+
+.footer-contnr {
+  background-color: #000000;
+}
+
+.footer-contnr div.flex-box {
+  padding-top: 19.5px;
+}
+
+.footer-contnr div.pages-widgets {
+  width: 23.3%;
+  margin-right: 28px;
+}
+
+.footer-contnr div.flex-box h4 {
+  margin-bottom: 25px;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-contnr div.collapser {
+  margin-left: 2px;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.footer-contnr div.collapser-header {
+  padding: 14px 0px 13.25px 13px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.footer-contnr div.collapser-header::after {
+  content: "\002B";
+  font-size: 32px;
+  font-weight: 200;
+  position: absolute;
+  right: 12px;
+  bottom: 2.5px;
+}
+
+.footer-contnr .collapser-header.active::after {
+  content: "\2212";
+  font-size: 32.5px;
+  font-weight: 400;
+  position: absolute;
+  right: 12px;
+  bottom: 2.5px;
+}
+
+.footer-contnr div.collapser-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+}
+
+.footer-contnr ul.collapser-ul {
+  list-style: none;
+  margin: 0;
+  padding: 3px 0px 11.5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.footer-contnr li.collapser-item {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 12px 9.5px;
+}
+
+.footer-contnr div.twitter-widgets {
+  width: 22%;
+  margin-right: 10px;
+}
+
+.footer-contnr div.twitter-widgets h4 {
+  margin-bottom: 24px;
+}
+
+.footer-contnr .tweet-cmnt .tweet-cnt {
+  font-size: 13.25px;
+  font-family: "Open Sans", sans-serif;
+  gap: 15px;
+  padding: 0;
+}
+
+.tweet-cmnt .tweet-cnt i{
+  font-size: 23px;
+  color: #55acee;
+  margin-left: 10px;
+}
+
+.tweet-cmnt .tweet-optn {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-contnr div.flickr-widgets {
+  width: 23.4%;
+  margin-right: 10px;
+}
+
+.footer-contnr div.news-widgets {
+  width: 23.4%;
+  margin-right: 10px;
 }
